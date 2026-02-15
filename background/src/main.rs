@@ -1,34 +1,52 @@
-// src/main.rs
-use std::sync::mpsc;
+use std::sync::{mpsc, Arc, atomic::{AtomicBool, Ordering}};
 use std::thread;
+use std::time::Duration;
 
 mod pythonspawn;
+mod telemetry_listener;
+mod video_listener;
+
 use pythonspawn::runpythonfile_stream;
 
 fn main() {
+    println!("Background worker starting...");
+
+    let running = Arc::new(AtomicBool::new(true));
+    let r = running.clone();
+
+    ctrlc::set_handler(move || {
+        println!("Shutdown signal received.");
+        r.store(false, Ordering::SeqCst);
+    }).expect("Error setting Ctrl-C handler");
+
     let (tx, rx) = mpsc::channel::<(&'static str, String)>();
 
-    // Spawn model.py thread
-    let tx_model = tx.clone();
-    let handle_model = thread::spawn(move || {
-        runpythonfile_stream("test/test.py", "test.py", tx_model);
+    let run_clone = running.clone();
+    thread::spawn(move || {
+        telemetry_listener::start_telemetry_listener(run_clone);
     });
 
-    // Spawn logging.py thread
-    let tx_logging = tx.clone();
-    let handle_logging = thread::spawn(move || {
-        runpythonfile_stream("utils/logging.py", "logging.py", tx_logging);
+    let run_clone = running.clone();
+    thread::spawn(move || {
+        video_listener::start_video_listener(run_clone);
     });
 
-    // Drop the original sender in main so rx will close when both worker threads finish
+    let tx_logger = tx.clone();
+    thread::spawn(move || {
+        runpythonfile_stream(
+            "background/python/logger.py",
+            "logger.py",
+            tx_logger,
+        );
+    });
+
     drop(tx);
 
-    // Receive and print streamed output as it arrives
-    while let Ok((tag, line)) = rx.recv() {
-        println!("[{tag}] {line}");
+    while running.load(Ordering::SeqCst) {
+        if let Ok((tag, line)) = rx.recv_timeout(Duration::from_millis(500)) {
+            println!("[{tag}] {line}");
+        }
     }
 
-    // Wait for threads to finish
-    handle_model.join().expect("Model thread panicked");
-    handle_logging.join().expect("Logging thread panicked");
+    println!("Background worker shutting down.");
 }
