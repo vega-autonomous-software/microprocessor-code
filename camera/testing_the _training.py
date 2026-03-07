@@ -1,8 +1,8 @@
 import cv2
 from ultralytics import YOLO
 
-model = YOLO('\\vega_model_ready (1)\\kaggle\\working\\vega_racing\\fsoco_pro_run\\weights\\best.pt')
-cap = cv2.VideoCapture("\Chalmers Formula Student Autonomous Testing #shorts.mp4')
+model = YOLO('\\best.pt')
+cap = cv2.VideoCapture("\Chalmers Formula Student Autonomous Testing #shorts.mp4")
 
 # Get the total number of frames to prevent crashing at the end
 total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
@@ -50,4 +50,5 @@ while cap.isOpened():
         current_frame = max(current_frame - 1, 0)
 
 cap.release()
+
 cv2.destroyAllWindows()
