@@ -1,0 +1,54 @@
+import cv2
+from ultralytics import YOLO
+
+model = YOLO('\\best.pt')
+cap = cv2.VideoCapture("\Chalmers Formula Student Autonomous Testing #shorts.mp4")
+
+# Get the total number of frames to prevent crashing at the end
+total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+current_frame = 0
+
+while cap.isOpened():
+    # Tell OpenCV exactly which frame to grab
+    cap.set(cv2.CAP_PROP_POS_FRAMES, current_frame)
+    ret, frame = cap.read()
+
+    if not ret:
+        break
+
+    results = model.predict(frame, imgsz=1024, conf=0.4, verbose=False)[0]
+
+    for box in results.boxes:
+        x1, y1, x2, y2 = map(int, box.xyxy[0])
+        cls_id = int(box.cls[0])
+        conf = float(box.conf[0])
+        cls_name = results.names[cls_id].lower()
+
+        if 'yellow' in cls_name:
+            color = (0, 255, 255)
+        elif 'blue' in cls_name:
+            color = (255, 0, 0)
+        else:
+            color = (0, 0, 255)
+
+        cv2.rectangle(frame, (x1, y1), (x2, y2), color, 2)
+        cv2.putText(frame, f"{conf:.2f}", (x1, y1 - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
+
+    # Display the controls and current frame number on the screen
+    cv2.putText(frame, f"Frame: {current_frame}/{total_frames} | 'd' = Next | 'a' = Prev | 'q' = Quit",
+                (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+
+    cv2.imshow("Vega Racing - Frame Debugger", frame)
+
+    key = cv2.waitKey(0) & 0xFF
+
+    if key == ord('q'):
+        break
+    elif key == ord('d') or key == 32:  # 'd' or Spacebar moves forward
+        current_frame = min(current_frame + 1, total_frames - 1)
+    elif key == ord('a'):  # 'a' moves backward
+        current_frame = max(current_frame - 1, 0)
+
+cap.release()
+
+cv2.destroyAllWindows()
