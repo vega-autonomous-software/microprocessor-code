@@ -8,7 +8,8 @@
 its sofware for autonomouse car 
 
 ## Getting Started
-1) fork the repo 
+1) fork the repo and download FSDS.exe into foreground foreground/engine_binaries and in engine_binaries move seeting.json 
+
 
 2) make your branch which must be named (your name)_(the function your solving)
 

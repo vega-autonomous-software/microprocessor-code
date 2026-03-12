@@ -4,6 +4,7 @@ FROM rust:1.75-bookworm
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 python3-venv python3-pip \
     python3-tk tk \
+    ffmpeg \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /work
