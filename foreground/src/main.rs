@@ -1,6 +1,6 @@
-// src/main.rs
 use std::sync::mpsc;
 use std::thread;
+use std::time::Duration;
 
 mod pythonspawn;
 use pythonspawn::runpythonfile_stream;
@@ -8,27 +8,28 @@ use pythonspawn::runpythonfile_stream;
 fn main() {
     let (tx, rx) = mpsc::channel::<(&'static str, String)>();
 
-    // Spawn model.py thread
-    let tx_model = tx.clone();
-    let handle_model = thread::spawn(move || {
-        runpythonfile_stream("utils/com_window_code/main.py", "model.py", tx_model);
+    let tx_engine = tx.clone();
+    let handle_engine = thread::spawn(move || {
+        runpythonfile_stream("python/engine.py", "engine.py", tx_engine);
     });
 
-    // Spawn logging.py thread
-    let tx_logging = tx.clone();
-    let handle_logging = thread::spawn(move || {
-        runpythonfile_stream("utils/logging.py", "logging.py", tx_logging);
+    thread::sleep(Duration::from_secs(10));
+
+    let tx_manual = tx.clone();
+    let handle_manual = thread::spawn(move || {
+        runpythonfile_stream(
+            "python/manual_drive_sensors.py",
+            "manual_drive_sensors.py",
+            tx_manual,
+        );
     });
 
-    // Drop the original sender in main so rx will close when both worker threads finish
     drop(tx);
 
-    // Receive and print streamed output as it arrives
     while let Ok((tag, line)) = rx.recv() {
         println!("[{tag}] {line}");
     }
 
-    // Wait for threads to finish
-    handle_model.join().expect("Model thread panicked");
-    handle_logging.join().expect("Logging thread panicked");
+    handle_engine.join().expect("engine.py thread panicked");
+    handle_manual.join().expect("manual_drive_sensors.py thread panicked");
 }
