@@ -1,1 +1,4 @@
 .venv/
+engine_binaries.7z
+engine_binaries/
+**/engine_binaries/
