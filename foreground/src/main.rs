@@ -13,14 +13,33 @@ fn main() {
         runpythonfile_stream("python/engine.py", "engine.py", tx_engine);
     });
 
-    thread::sleep(Duration::from_secs(10));
+    // Give FSDS time to start
+    thread::sleep(Duration::from_secs(25));
 
-    let tx_manual = tx.clone();
-    let handle_manual = thread::spawn(move || {
+    let tx_control = tx.clone();
+    let handle_control = thread::spawn(move || {
         runpythonfile_stream(
-            "python/manual_drive_sensors.py",
-            "manual_drive_sensors.py",
-            tx_manual,
+            "python/control_input_node.py",
+            "control_input_node.py",
+            tx_control,
+        );
+    });
+
+    let tx_imu = tx.clone();
+    let handle_imu = thread::spawn(move || {
+        runpythonfile_stream(
+            "python/imu_speed_node.py",
+            "imu_speed_node.py",
+            tx_imu,
+        );
+    });
+
+    let tx_vision = tx.clone();
+    let handle_vision = thread::spawn(move || {
+        runpythonfile_stream(
+            "python/vision_node.py",
+            "vision_node.py",
+            tx_vision,
         );
     });
 
@@ -31,5 +50,13 @@ fn main() {
     }
 
     handle_engine.join().expect("engine.py thread panicked");
-    handle_manual.join().expect("manual_drive_sensors.py thread panicked");
+    handle_control
+        .join()
+        .expect("control_input_node.py thread panicked");
+    handle_imu
+        .join()
+        .expect("imu_speed_node.py thread panicked");
+    handle_vision
+        .join()
+        .expect("vision_node.py thread panicked");
 }

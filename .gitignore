@@ -1,3 +1,6 @@
 .venv/
+engine_binaries.7z
+engine_binaries/
+**/engine_binaries/
 .DS_Store
 target/
