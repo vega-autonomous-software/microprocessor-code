@@ -7,6 +7,9 @@ import tkinter as tk
 from tkinter import ttk
 from PIL import Image, ImageTk
 import io
+import os
+import numpy as np
+from ultralytics import YOLO
 
 
 HOST = "127.0.0.1"
@@ -136,6 +139,14 @@ class TestConsoleApp:
         self.latest_imu = None
         self.latest_actuator = None
         self.latest_image = None
+
+        _model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "best.pt")
+        try:
+            self.yolo_model = YOLO(_model_path)
+            print(f"[YOLO] model loaded from {_model_path}")
+        except Exception as _e:
+            self.yolo_model = None
+            print(f"[YOLO] failed to load model: {_e}")
 
         self.imu_status = "Disconnected"
         self.act_status = "Disconnected"
@@ -389,8 +400,28 @@ class TestConsoleApp:
 
         if self.latest_image:
             try:
-                img = Image.open(io.BytesIO(self.latest_image))
+                img = Image.open(io.BytesIO(self.latest_image)).convert("RGB")
                 img.thumbnail((980, 760))
+
+                if self.yolo_model is not None:
+                    frame_np = np.array(img)
+                    results = self.yolo_model(frame_np, verbose=False)[0]
+
+                    from PIL import ImageDraw, ImageFont
+                    draw = ImageDraw.Draw(img)
+                    try:
+                        font = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 14)
+                    except Exception:
+                        font = ImageFont.load_default()
+
+                    for box in results.boxes:
+                        x1, y1, x2, y2 = box.xyxy[0].tolist()
+                        conf = float(box.conf[0])
+                        cls_id = int(box.cls[0])
+                        label = results.names.get(cls_id, str(cls_id))
+                        draw.rectangle([x1, y1, x2, y2], outline="lime", width=2)
+                        draw.text((x1 + 2, y1 + 2), f"{label} {conf:.2f}", fill="lime", font=font)
+
                 tk_img = ImageTk.PhotoImage(img)
                 self.image_label.configure(image=tk_img)
                 self.image_label.image = tk_img
