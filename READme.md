@@ -5,15 +5,15 @@
 # Autonomous Car Project
 
 ## Overview
-its sofware for autonomouse car 
+it is the software for an autonomous car 
 
 ## Getting Started
 1) fork the repo and download FSDS.exe into foreground foreground/engine_binaries and in engine_binaries move seeting.json 
 
 
-2) make your branch which must be named (your name)_(the function your solving)
+2) your branch must be named (your name)_(the function your solving)
 
-3) make sure your in your branch 
+3) make sure you are in your branch 
 
 4) Build the image (recreates the same environment)
 docker build -t rust-python .
