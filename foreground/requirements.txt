@@ -1,0 +1,7 @@
+pyserial
+Pillow
+opencv-python
+numpy
+pygame
+msgpack-rpc-python
+msgpack

@@ -10,6 +10,8 @@ import io
 import os
 import numpy as np
 from ultralytics import YOLO
+import cv2
+import math
 
 
 HOST = "127.0.0.1"
@@ -400,29 +402,81 @@ class TestConsoleApp:
 
         if self.latest_image:
             try:
-                img = Image.open(io.BytesIO(self.latest_image)).convert("RGB")
-                img.thumbnail((980, 760))
+                img_full = Image.open(io.BytesIO(self.latest_image)).convert("RGB")
+                frame_np = np.array(img_full)
+                
+                CAM_W = 960
+                
+                if frame_np.shape[1] >= CAM_W:
+                    cam_img = frame_np[:, :CAM_W].copy()
+                    lidar_img = frame_np[:, CAM_W:].copy()
+                else:
+                    cam_img = frame_np.copy()
+                    lidar_img = np.zeros_like(frame_np)
 
                 if self.yolo_model is not None:
-                    frame_np = np.array(img)
-                    results = self.yolo_model(frame_np, verbose=False)[0]
+                    results = self.yolo_model(cam_img, verbose=False)[0]
 
-                    from PIL import ImageDraw, ImageFont
-                    draw = ImageDraw.Draw(img)
-                    try:
-                        font = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 14)
-                    except Exception:
-                        font = ImageFont.load_default()
-
+                    # 1. Extract LiDAR cones
+                    hsv = cv2.cvtColor(lidar_img, cv2.COLOR_RGB2HSV)
+                    lower_orange = np.array([10, 150, 150])
+                    upper_orange = np.array([25, 255, 255])
+                    mask = cv2.inRange(hsv, lower_orange, upper_orange)
+                    contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+                    
+                    lidar_cones = []
+                    center_x = lidar_img.shape[1] // 2
+                    center_y = lidar_img.shape[0] - 40
+                    scale = (lidar_img.shape[0] - 80) / 20.0
+                    
+                    for cnt in contours:
+                        M = cv2.moments(cnt)
+                        if M["m00"] > 0:
+                            cx = int(M["m10"] / M["m00"])
+                            cy = int(M["m01"] / M["m00"])
+                            lat_m = (cx - center_x) / scale
+                            fwd_m = (center_y - cy) / scale
+                            dist = math.sqrt(lat_m**2 + fwd_m**2)
+                            lidar_cones.append((cx, cy, dist))
+                    
+                    lidar_cones.sort(key=lambda c: c[0])
+                    
+                    # 2. Extract YOLO Camera cones
+                    cam_cones = []
                     for box in results.boxes:
                         x1, y1, x2, y2 = box.xyxy[0].tolist()
                         conf = float(box.conf[0])
                         cls_id = int(box.cls[0])
                         label = results.names.get(cls_id, str(cls_id))
-                        draw.rectangle([x1, y1, x2, y2], outline="lime", width=2)
-                        draw.text((x1 + 2, y1 + 2), f"{label} {conf:.2f}", fill="lime", font=font)
+                        bcx = (x1 + x2) / 2
+                        cam_cones.append((bcx, x1, y1, x2, y2, label, conf))
+                        
+                    cam_cones.sort(key=lambda c: c[0])
+                    
+                    # 3. Fuse and Draw
+                    for i in range(len(cam_cones)):
+                        bcx, x1, y1, x2, y2, label, conf = cam_cones[i]
+                        color = (0, 255, 0)
+                        text = f"{label} {conf:.2f}"
+                        
+                        if i < len(lidar_cones):
+                            cx, cy, dist = lidar_cones[i]
+                            text = f"{label} {conf:.2f} [{dist:.1f}m]"
+                            cv2.circle(lidar_img, (cx, cy), 10, (0, 255, 0), 2)
+                        
+                        cv2.rectangle(cam_img, (int(x1), int(y1)), (int(x2), int(y2)), color, 2)
+                        cv2.putText(cam_img, text, (int(x1), int(y1)-5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
-                tk_img = ImageTk.PhotoImage(img)
+                if frame_np.shape[1] >= CAM_W:
+                    dashboard = np.zeros_like(frame_np)
+                    dashboard[:, :CAM_W] = cam_img
+                    dashboard[:, CAM_W:] = lidar_img
+                else:
+                    dashboard = cam_img
+                
+                disp_img = Image.fromarray(dashboard)
+                disp_img.thumbnail((980, 760))
+                tk_img = ImageTk.PhotoImage(disp_img)
                 self.image_label.configure(image=tk_img)
                 self.image_label.image = tk_img
             except Exception as e:

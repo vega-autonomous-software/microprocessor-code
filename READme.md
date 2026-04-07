@@ -10,6 +10,8 @@ it is the software for an autonomous car
 ## Getting Started
 1) fork the repo and download FSDS.exe into foreground foreground/engine_binaries and in engine_binaries move seeting.json 
 
+2) pip install -r requirements.txt in foreground
+
 
 2) your branch must be named (your name)_(the function your solving)
 
