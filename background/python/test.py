@@ -14,6 +14,7 @@ import cv2
 import math
 import queue
 from ekf_slam import EKFSLAM
+from autonomous_controller import AutonomousController
 
 
 HOST = "127.0.0.1"
@@ -168,6 +169,10 @@ class TestConsoleApp:
         self.last_prediction_time = time.time()
         self.new_fused_ready = False
 
+        # Initialize Autonomous Controller (Speed capped to 1.0 m/s)
+        self.controller = AutonomousController(target_speed=0.5)
+        self.autonomous_mode = False
+
         # Thread-safe image processing pipeline
         self.yolo_input_queue = queue.Queue(maxsize=1)
         self.yolo_lock = threading.Lock()
@@ -291,7 +296,8 @@ class TestConsoleApp:
             "  - Throttle: W / Up Arrow (limit: 0.40)\n"
             "  - Steering: A/D or Left/Right Arrow\n"
             "  - Brake: S / Down Arrow\n"
-            "  - E-Brake: Space"
+            "  - E-Brake: Space\n"
+            "  - Toggle Auto Mode: P"
         )
         tk.Label(
             frame,
@@ -601,6 +607,28 @@ class TestConsoleApp:
                 self.ctrl_status = "Connected"
 
                 while True:
+                    if self.autonomous_mode and not self.using_keyboard:
+                        ekf_state = []
+                        for idx, l_info in enumerate(self.ekf.landmarks):
+                            if l_info.get("hit_count", 0) >= 3:
+                                lx_idx = 3 + 2 * idx
+                                ly_idx = 4 + 2 * idx
+                                if lx_idx < len(self.ekf.x):
+                                    ekf_state.append({
+                                        "x": float(self.ekf.x[lx_idx]),
+                                        "y": float(self.ekf.x[ly_idx]),
+                                        "color": l_info["color"].lower()
+                                    })
+                        
+                        speed = self.latest_imu.get("ground_speed_mps", 0.0) if self.latest_imu else 0.0
+                        
+                        thr, strng, brk = self.controller.compute_commands(
+                            ekf_state, self.ekf.x[0], self.ekf.x[1], self.ekf.x[2], speed
+                        )
+                        self.desired['throttle'] = thr
+                        self.desired['steering'] = strng
+                        self.desired['brake'] = brk
+
                     self.ctrl_tx.send_json_line(self.desired)
                     time.sleep(0.05)
             except Exception as e:
@@ -657,7 +685,8 @@ class TestConsoleApp:
         self.brake_label.set(f"Brake: {self.desired['brake']:.3f}")
         self.steering_label.set(f"Steering: {self.desired['steering']:.3f}")
 
-        self.imu_status_var.set(f"81 IMU: {self.imu_status}")
+        mode_str = "AUTO" if self.autonomous_mode else "MANUAL"
+        self.imu_status_var.set(f"81 IMU: {self.imu_status} [{mode_str}]")
         self.act_status_var.set(f"83 Actuator: {self.act_status}")
         self.vision_status_var.set(f"84 Vision: {self.vision_status}")
         self.ctrl_status_var.set(f"82 Control TX: {self.ctrl_status}")
@@ -815,18 +844,41 @@ class TestConsoleApp:
             if 0 <= py < 540:
                 cv2.line(map_img, (0, py), (540, py), (40, 40, 40), 1)
 
-        # 2. Draw trajectory path history
-        pts = []
-        for tx, ty in self.ekf.trajectory:
+        # Draw trajectory history (cyan line)
+        if len(self.ekf.trajectory) > 1:
+            pts = []
+            for tx, ty in self.ekf.trajectory:
+                dx = tx - xv
+                dy = ty - yv
+                px = int(cx - dy * scale)
+                py = int(cy - dx * scale)
+                pts.append((px, py))
+            for i in range(len(pts) - 1):
+                cv2.line(map_img, pts[i], pts[i+1], (0, 180, 255), 2)  # Cyan trajectory line
+
+        # Draw Planned Centerline (Waypoints)
+        if hasattr(self, 'controller') and self.controller.last_waypoints:
+            wpt_pixels = []
+            for wx, wy in self.controller.last_waypoints:
+                dx = wx - xv
+                dy = wy - yv
+                px = int(cx - dy * scale)
+                py = int(cy - dx * scale)
+                wpt_pixels.append((px, py))
+                cv2.circle(map_img, (px, py), 3, (255, 0, 255), -1)  # Magenta dots
+            
+            if len(wpt_pixels) > 1:
+                for i in range(len(wpt_pixels) - 1):
+                    cv2.line(map_img, wpt_pixels[i], wpt_pixels[i+1], (255, 0, 255), 1)
+        
+        # Draw Pure Pursuit Lookahead Target
+        if hasattr(self, 'controller') and self.controller.last_target_point:
+            tx, ty = self.controller.last_target_point
             dx = tx - xv
             dy = ty - yv
             px = int(cx - dy * scale)
             py = int(cy - dx * scale)
-            pts.append((px, py))
-
-        if len(pts) > 1:
-            for i in range(len(pts) - 1):
-                cv2.line(map_img, pts[i], pts[i+1], (0, 180, 255), 2)  # Cyan trajectory line
+            cv2.circle(map_img, (px, py), 6, (0, 0, 255), 2)  # Red Target Reticle
 
         # 3. Draw mapped landmarks (cones)
         drawn_cones = 0
@@ -889,6 +941,16 @@ class TestConsoleApp:
     def _on_key_press(self, event):
         key = event.keysym.lower()
         self.pressed_keys[key] = time.time()
+        
+        if key == 'p':
+            self.autonomous_mode = not self.autonomous_mode
+            if self.autonomous_mode:
+                self.using_keyboard = False
+                self.steering_var.set(0.0)
+                self.throttle_var.set(0.0)
+                self.brake_var.set(0.0)
+                self.on_slider_change()
+            print(f"[Dashboard] Autonomous Mode: {self.autonomous_mode}")
 
     def _on_key_release(self, event):
         key = event.keysym.lower()
