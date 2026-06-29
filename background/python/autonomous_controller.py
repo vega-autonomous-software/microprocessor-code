@@ -12,6 +12,11 @@ class AutonomousController:
         self.max_acceleration = 5.0  # m/s^2
         self.max_deceleration = 8.0  # m/s^2
         
+        # Stanley Tuning Parameters
+        self.k_e = 1.0  # Cross-track error gain (increase for tighter cornering)
+        self.k_s = 1.0  # Softening constant (increase to prevent low-speed wobble)
+        self.lookahead_dist = 1.5  # Heading lookahead (meters)
+        
         self.target_speed = target_speed
         
         # State tracking
@@ -24,12 +29,12 @@ class AutonomousController:
     def get_distance(self, p1, p2):
         return math.hypot(p1[0] - p2[0], p1[1] - p2[1])
 
-    def extract_centerline(self, ekf_state, vehicle_x=0.0, vehicle_y=0.0, vehicle_theta=0.0, max_track_width=8.0):
+    def extract_centerline(self, ekf_state, vehicle_x=0.0, vehicle_y=0.0, vehicle_theta=0.0, max_track_width=20.0):
         """
         Uses Delaunay Triangulation to extract the centerline between blue and yellow cones.
         """
-        blue_cones = [c for c in ekf_state if c['color'] == 'blue']
-        yellow_cones = [c for c in ekf_state if c['color'] == 'yellow']
+        blue_cones = [c for c in ekf_state if 'blue' in c['color']]
+        yellow_cones = [c for c in ekf_state if 'yellow' in c['color']]
         all_cones = blue_cones + yellow_cones
         
         # Local Horizon Fix: Only triangulate cones in front of the car
@@ -38,7 +43,7 @@ class AutonomousController:
             dx = c['x'] - vehicle_x
             dy = c['y'] - vehicle_y
             local_x = dx * math.cos(vehicle_theta) + dy * math.sin(vehicle_theta)
-            if local_x > -1.0 and math.hypot(dx, dy) < 15.0:
+            if local_x > -1.0 and math.hypot(dx, dy) < 25.0:
                 cones.append(c)
                 
         waypoints = []
@@ -133,7 +138,7 @@ class AutonomousController:
                         best_score = score
                         best_pt = pt
                         
-                if best_pt is None or best_score > 10.0:
+                if best_pt is None or best_score > 30.0:
                     break
                     
                 ordered_waypoints.append(best_pt)
@@ -215,10 +220,6 @@ class AutonomousController:
         if not waypoints:
             return self.last_steering
             
-        # IMPORTANT: FSDS IMU Yaw is inverted compared to standard Atan2 geometry!
-        # Convert to Standard Geometric Yaw (CCW positive from +X)
-        geom_theta = math.pi - vehicle_theta
-        
         closest_idx = None
         target_local_y = None
         
@@ -226,9 +227,9 @@ class AutonomousController:
             dx = pt[0] - vehicle_x
             dy = pt[1] - vehicle_y
             
-            # Standard 2D Rotation Matrix using geom_theta
-            local_x = dx * math.cos(geom_theta) + dy * math.sin(geom_theta)
-            local_y = -dx * math.sin(geom_theta) + dy * math.cos(geom_theta)
+            # Local coordinates (AirSim NED: +X is Forward, +Y is Right)
+            local_x = dx * math.cos(vehicle_theta) + dy * math.sin(vehicle_theta)
+            local_y = -dx * math.sin(vehicle_theta) + dy * math.cos(vehicle_theta)
             
             # ONLY consider waypoints that are IN FRONT of the car
             if local_x > 0.0:
@@ -242,14 +243,14 @@ class AutonomousController:
         target_wp = waypoints[closest_idx]
         self.last_target_point = (target_wp[0], target_wp[1])
         
+        # Cross-track error
         e_f = target_local_y
         
         # Path Heading Error (psi_e)
-        # Look ahead geometrically (approx 1.5 meters) to avoid B-Spline noise
         lookahead_idx = closest_idx
         for j in range(closest_idx + 1, len(waypoints)):
             dist_to_j = math.hypot(waypoints[j][0] - target_wp[0], waypoints[j][1] - target_wp[1])
-            if dist_to_j >= 1.5:
+            if dist_to_j >= self.lookahead_dist:
                 lookahead_idx = j
                 break
                 
@@ -257,16 +258,13 @@ class AutonomousController:
             next_wp = waypoints[lookahead_idx]
             path_yaw = math.atan2(next_wp[1] - target_wp[1], next_wp[0] - target_wp[0])
         else:
-            path_yaw = geom_theta
+            path_yaw = vehicle_theta
             
-        psi_e = path_yaw - geom_theta
+        psi_e = path_yaw - vehicle_theta
         psi_e = (psi_e + math.pi) % (2 * math.pi) - math.pi
         
-        k_e = 1.0 # Cross-track error gain
-        k_s = 1.0 # Softening constant
-        
         safe_speed = max(1.0, vehicle_speed)
-        steering = psi_e + math.atan2(k_e * e_f, safe_speed + k_s)
+        steering = -(psi_e + math.atan2(self.k_e * e_f, safe_speed + self.k_s))
         
         steering = max(-1.0, min(1.0, steering / 0.5))
         return steering
@@ -284,11 +282,10 @@ class AutonomousController:
         
         # Estimate upcoming curvature
         closest_idx = 0
-        geom_theta = math.pi - vehicle_theta
         for i, pt in enumerate(waypoints):
             dx = pt[0] - vehicle_x
             dy = pt[1] - vehicle_y
-            local_x = dx * math.cos(geom_theta) + dy * math.sin(geom_theta)
+            local_x = dx * math.cos(vehicle_theta) + dy * math.sin(vehicle_theta)
             if local_x > 0.0:
                 closest_idx = i
                 break
