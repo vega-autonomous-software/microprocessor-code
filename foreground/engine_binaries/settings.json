@@ -1,7 +1,7 @@
 {
     "SeeDocsAt": "https://FS-Driverless.github.io/Formula-Student-Driverless-Simulator/",
     "SettingsVersion": 1.2,
-    "ViewMode": "NoDisplay",
+    "ViewMode": "SpringArmChase",
     "ClockSpeed": 1.0,
     "SpectatorServerPassword": "password",
     "PawnPaths": {

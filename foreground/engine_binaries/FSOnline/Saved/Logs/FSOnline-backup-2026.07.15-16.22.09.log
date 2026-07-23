@@ -1,0 +1,1155 @@
+﻿Log file open, 07/15/26 21:37:27
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogPakFile: Display: Found Pak file ../../../FSOnline/Content/Paks/FSOnline-WindowsNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../FSOnline/Content/Paks/FSOnline-WindowsNoEditor.pak.
+LogPakFile: PakFile PrimaryIndexSize=90210
+LogPakFile: PakFile PathHashIndexSize=58251
+LogPakFile: PakFile FullDirectoryIndexSize=84040
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../FSOnline/Content/Paks/FSOnline-WindowsNoEditor.pak' (chunk index -1, root '../../../') mounted
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../FSOnline/Content/Paks/FSOnline-WindowsNoEditor.pak)
+LogPakFile: OnPakFileMounted2Time == 0.000056
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 47 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.084379
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +5:30, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin AirSim
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin PixWinPlugin
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin OpenImageDenoise
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OpenXREyeTracker
+LogPluginManager: Mounting plugin OpenXR
+LogPluginManager: Mounting plugin OpenXRHandTracking
+LogPluginManager: Mounting plugin LiveLink
+LogPluginManager: Mounting plugin Takes
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+PixWinPlugin: PIX capture plugin failed to initialize! Check that the process is launched from PIX.
+LogLuminAPIImpl: Warning: MLSDK not found.  This likely means the MLSDK environment variable is not set.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.27-CL-18319896
+LogInit: Engine Version: 4.27.2-18319896+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-17155196+++UE4+Release-4.27
+LogInit: Net CL: 17155196
+LogInit: OS: Windows 10 (Release 2009) (), CPU: 12th Gen Intel(R) Core(TM) i5-12500H, GPU: Intel(R) Iris(R) Xe Graphics
+LogInit: Compiled (64-bit): Nov 30 2021 07:26:28
+LogInit: Compiled with Visual C++: 19.16.27032.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  /Game/TrainingMap?listen
+LogInit: Base Directory: C:/Users/text2/Desktop/microprocessor-code(with engine binaries)/microprocessor-code/foreground/engine_binaries/FSOnline/Binaries/Win64/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 14
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 45
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 47
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Engine.ini]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Engine.ini]
+[2026.07.15-16.07.28:111][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Engine.ini]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Engine.ini]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2026.07.15-16.07.28:111][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Engine.ini]
+[2026.07.15-16.07.28:117][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.07.15-16.07.28:117][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.07.15-16.07.28:118][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2026.07.15-16.07.28:118][  0]LogInit: Applying CVar settings loaded from the selected device profile: [WindowsNoEditor]
+[2026.07.15-16.07.28:118][  0]LogHAL: Display: Platform has ~ 16 GB [16782307328 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.07.15-16.07.28:118][  0]LogInit: Going up to parent DeviceProfile [Windows]
+[2026.07.15-16.07.28:118][  0]LogInit: Going up to parent DeviceProfile []
+[2026.07.15-16.07.28:118][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.07.15-16.07.28:118][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.ShaderDevelopmentMode:1]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.XGEShaderCompile:0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[r.Shaders.AllowCompilingThroughWorkers:0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2026.07.15-16.07.28:119][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [../../../FSOnline/Saved/Config/WindowsNoEditor/Engine.ini]
+[2026.07.15-16.07.28:119][  0]LogInit: Computer: --VOLDEMORT--
+[2026.07.15-16.07.28:119][  0]LogInit: User: text2
+[2026.07.15-16.07.28:119][  0]LogInit: CPU Page size=4096, Cores=12
+[2026.07.15-16.07.28:119][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2026.07.15-16.07.28:119][  0]LogMemory: Memory total: Physical=15.6GB (16GB approx)
+[2026.07.15-16.07.28:119][  0]LogMemory: Platform Memory Stats for WindowsNoEditor
+[2026.07.15-16.07.28:119][  0]LogMemory: Process Physical Memory: 87.11 MB used, 87.11 MB peak
+[2026.07.15-16.07.28:119][  0]LogMemory: Process Virtual Memory: 81.89 MB used, 81.89 MB peak
+[2026.07.15-16.07.28:119][  0]LogMemory: Physical Memory: 12674.77 MB used,  3330.08 MB free, 16004.86 MB total
+[2026.07.15-16.07.28:119][  0]LogMemory: Virtual Memory: 134212280.00 MB used,  5445.04 MB free, 134217728.00 MB total
+[2026.07.15-16.07.28:124][  0]LogWindows: WindowsPlatformFeatures enabled
+[2026.07.15-16.07.28:158][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2026.07.15-16.07.28:159][  0]LogInit: Using OS detected language (en-US).
+[2026.07.15-16.07.28:159][  0]LogInit: Using OS detected locale (en-US).
+[2026.07.15-16.07.28:159][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2026.07.15-16.07.28:188][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2026.07.15-16.07.28:200][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2026.07.15-16.07.28:200][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.07.15-16.07.28:216][  0]LogVulkanRHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: - Found 3 instance layers
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_LAYER_EOS_Overlay
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_LAYER_NV_optimus
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_LAYER_NV_present
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: - Found 20 instance extensions
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_EXT_debug_report
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_EXT_debug_utils
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_EXT_direct_mode_display
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_EXT_surface_maintenance1
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_EXT_swapchain_colorspace
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_device_group_creation
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_display
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_external_fence_capabilities
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_external_memory_capabilities
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_external_semaphore_capabilities
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_get_display_properties2
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_get_physical_device_properties2
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_get_surface_capabilities2
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_portability_enumeration
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_surface
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_surface_maintenance1
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_surface_protected_capabilities
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_KHR_win32_surface
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_LUNARG_direct_driver_loading
+[2026.07.15-16.07.28:339][  0]LogVulkanRHI: Display: * VK_NV_external_memory_capabilities
+[2026.07.15-16.07.28:341][  0]LogHMD: Failed to enumerate extensions. Please check that you have a valid OpenXR runtime installed.
+[2026.07.15-16.07.28:341][  0]LogVulkanRHI: Display: Not using instance layers
+[2026.07.15-16.07.28:341][  0]LogVulkanRHI: Display: Using instance extensions
+[2026.07.15-16.07.28:341][  0]LogVulkanRHI: Display: * VK_KHR_surface
+[2026.07.15-16.07.28:341][  0]LogVulkanRHI: Display: * VK_KHR_win32_surface
+[2026.07.15-16.07.28:341][  0]LogVulkanRHI: Display: * VK_KHR_get_surface_capabilities2
+[2026.07.15-16.07.28:341][  0]LogVulkanRHI: Display: * VK_KHR_external_memory_capabilities
+[2026.07.15-16.07.28:341][  0]LogVulkanRHI: Display: * VK_KHR_get_physical_device_properties2
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: Found 2 device(s)
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: Device 0: NVIDIA GeForce RTX 3050 Laptop GPU
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: - API 1.4.325(0x404145) Driver 0x94000000 VendorId 0x10de
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: - DeviceID 0x25a2 Type Discrete GPU
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: - Max Descriptor Sets Bound 32 Timestamps 1
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: - Device Properties driverName: NVIDIA
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: - Device Properties driverInfo: 592.00
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device layer VK_LAYER_NV_optimus
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device layer VK_LAYER_NV_present
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_AMD_buffer_marker
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_4444_formats
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_attachment_feedback_loop_dynamic_state
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_attachment_feedback_loop_layout
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_blend_operation_advanced
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_border_color_swizzle
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_buffer_device_address
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_calibrated_timestamps
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_color_write_enable
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_conditional_rendering
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_conservative_rasterization
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_custom_border_color
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_depth_bias_control
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_depth_clamp_control
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_depth_clamp_zero_one
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_depth_clip_control
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_depth_clip_enable
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_depth_range_unrestricted
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_descriptor_buffer
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_descriptor_indexing
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_device_address_binding_report
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_device_fault
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_device_generated_commands
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_discard_rectangles
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_dynamic_rendering_unused_attachments
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_extended_dynamic_state
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_extended_dynamic_state2
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_extended_dynamic_state3
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_external_memory_host
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_fragment_shader_interlock
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_full_screen_exclusive
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_global_priority
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_global_priority_query
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_graphics_pipeline_library
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_hdr_metadata
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_host_image_copy
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_host_query_reset
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_image_2d_view_of_3d
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_image_robustness
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_image_sliced_view_of_3d
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_image_view_min_lod
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_index_type_uint8
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_inline_uniform_block
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_legacy_vertex_attributes
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_line_rasterization
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_load_store_op_none
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_memory_budget
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_memory_priority
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_mesh_shader
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_multi_draw
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_mutable_descriptor_type
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_nested_command_buffer
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_non_seamless_cube_map
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_opacity_micromap
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_pageable_device_local_memory
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_pci_bus_info
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_pipeline_creation_cache_control
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_pipeline_creation_feedback
+[2026.07.15-16.07.28:417][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_pipeline_library_group_handles
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_pipeline_robustness
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_post_depth_coverage
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_present_mode_fifo_latest_ready
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_primitive_topology_list_restart
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_primitives_generated_query
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_private_data
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_provoking_vertex
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_queue_family_foreign
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_robustness2
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_sample_locations
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_sampler_filter_minmax
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_scalar_block_layout
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_separate_stencil_usage
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_atomic_float
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_demote_to_helper_invocation
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_image_atomic_int64
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_module_identifier
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_object
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_replicated_composites
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_subgroup_ballot
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_subgroup_vote
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_viewport_index_layer
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_subgroup_size_control
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_swapchain_maintenance1
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_texel_buffer_alignment
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_tooling_info
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_transform_feedback
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_vertex_attribute_divisor
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_vertex_attribute_robustness
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_vertex_input_dynamic_state
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_ycbcr_2plane_444_formats
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_ycbcr_image_arrays
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_zero_initialize_device_memory
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_GOOGLE_hlsl_functionality1
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_GOOGLE_user_type
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_16bit_storage
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_8bit_storage
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_acceleration_structure
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_bind_memory2
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_buffer_device_address
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_calibrated_timestamps
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_compute_shader_derivatives
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_cooperative_matrix
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_copy_commands2
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_create_renderpass2
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_dedicated_allocation
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_deferred_host_operations
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_depth_clamp_zero_one
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_depth_stencil_resolve
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_descriptor_update_template
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_device_group
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_draw_indirect_count
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_driver_properties
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_dynamic_rendering
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_dynamic_rendering_local_read
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_fence
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_fence_win32
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_memory
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_memory_win32
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_semaphore
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_semaphore_win32
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_format_feature_flags2
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_fragment_shader_barycentric
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_fragment_shading_rate
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_get_memory_requirements2
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_global_priority
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_image_format_list
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_imageless_framebuffer
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_index_type_uint8
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_line_rasterization
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_load_store_op_none
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance1
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance2
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance3
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance4
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance5
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance6
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance7
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance8
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance9
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_map_memory2
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_multiview
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_pipeline_binary
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_pipeline_executable_properties
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_pipeline_library
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_present_id
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_present_id2
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_present_mode_fifo_latest_ready
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_present_wait
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_present_wait2
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_push_descriptor
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_ray_query
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_ray_tracing_maintenance1
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_ray_tracing_pipeline
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_ray_tracing_position_fetch
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_relaxed_block_layout
+[2026.07.15-16.07.28:418][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_robustness2
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_sampler_mirror_clamp_to_edge
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_sampler_ycbcr_conversion
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_separate_depth_stencil_layouts
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_atomic_int64
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_bfloat16
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_clock
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_draw_parameters
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_expect_assume
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_float16_int8
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_float_controls
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_float_controls2
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_integer_dot_product
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_maximal_reconvergence
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_non_semantic_info
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_quad_control
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_relaxed_extended_instruction
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_subgroup_extended_types
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_subgroup_rotate
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_subgroup_uniform_control_flow
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_terminate_invocation
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_untyped_pointers
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_spirv_1_4
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_storage_buffer_storage_class
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_swapchain
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_swapchain_maintenance1
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_swapchain_mutable_format
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_synchronization2
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_timeline_semaphore
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_unified_image_layouts
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_uniform_buffer_standard_layout
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_variable_pointers
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_vertex_attribute_divisor
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_decode_av1
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_decode_h264
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_decode_h265
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_decode_queue
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_decode_vp9
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_encode_h264
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_encode_h265
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_encode_intra_refresh
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_encode_quantization_map
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_encode_queue
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_maintenance1
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_maintenance2
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_queue
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_vulkan_memory_model
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_win32_keyed_mutex
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_workgroup_memory_explicit_layout
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_zero_initialize_workgroup_memory
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_acquire_winrt_display
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_clip_space_w_scaling
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_cluster_acceleration_structure
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_compute_shader_derivatives
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_cooperative_matrix
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_cooperative_matrix2
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_cooperative_vector
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_copy_memory_indirect
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_corner_sampled_image
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_coverage_reduction_mode
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_cuda_kernel_launch
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_dedicated_allocation
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_dedicated_allocation_image_aliasing
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_descriptor_pool_overallocation
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_device_diagnostic_checkpoints
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_device_diagnostics_config
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_device_generated_commands
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_device_generated_commands_compute
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_disk_cache_utils
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_external_compute_queue
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_external_memory
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_external_memory_win32
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_fill_rectangle
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_fragment_coverage_to_color
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_fragment_shader_barycentric
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_fragment_shading_rate_enums
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_framebuffer_mixed_samples
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_geometry_shader_passthrough
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_inherited_viewport_scissor
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_internal_nvpresent
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_linear_color_attachment
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_low_latency
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_low_latency2
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_memory_decompression
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_mesh_shader
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_optical_flow
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_partitioned_acceleration_structure
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_present_metering
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_raw_access_chains
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_ray_tracing
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_ray_tracing_invocation_reorder
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_ray_tracing_motion_blur
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_representative_fragment_test
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_sample_mask_override_coverage
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_scissor_exclusive
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_shader_atomic_float16_vector
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_shader_image_footprint
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_shader_sm_builtins
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_shader_subgroup_partitioned
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_shading_rate_image
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_viewport_array2
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_viewport_swizzle
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_win32_keyed_mutex
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NVX_binary_import
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NVX_image_view_handle
+[2026.07.15-16.07.28:419][  0]LogVulkanRHI: Display: -    Found device extension VK_NVX_multiview_per_view_attributes
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: Device 1: Intel(R) Iris(R) Xe Graphics
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: - API 1.4.311(0x404137) Driver 0x195a86 VendorId 0x8086
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: - DeviceID 0x46a6 Type Integrated GPU
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: - Max Descriptor Sets Bound 32 Timestamps 1
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: - Device Properties driverName: Intel Corporation
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: - Device Properties driverInfo: 101.6790
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device layer VK_LAYER_NV_optimus
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device layer VK_LAYER_NV_present
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_4444_formats
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_attachment_feedback_loop_layout
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_buffer_device_address
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_calibrated_timestamps
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_color_write_enable
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_conditional_rendering
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_conservative_rasterization
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_custom_border_color
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_depth_clip_control
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_depth_clip_enable
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_descriptor_indexing
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_device_address_binding_report
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_dynamic_rendering_unused_attachments
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_extended_dynamic_state
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_extended_dynamic_state2
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_extended_dynamic_state3
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_external_memory_host
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_fragment_shader_interlock
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_full_screen_exclusive
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_global_priority
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_global_priority_query
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_graphics_pipeline_library
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_hdr_metadata
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_host_image_copy
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_host_query_reset
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_image_2d_view_of_3d
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_image_robustness
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_image_view_min_lod
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_index_type_uint8
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_inline_uniform_block
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_line_rasterization
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_load_store_op_none
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_memory_budget
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_memory_priority
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_multi_draw
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_mutable_descriptor_type
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_non_seamless_cube_map
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_pageable_device_local_memory
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_pipeline_creation_cache_control
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_pipeline_creation_feedback
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_pipeline_robustness
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_post_depth_coverage
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_primitive_topology_list_restart
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_primitives_generated_query
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_private_data
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_provoking_vertex
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_robustness2
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_sample_locations
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_sampler_filter_minmax
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_scalar_block_layout
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_separate_stencil_usage
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_atomic_float
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_atomic_float2
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_demote_to_helper_invocation
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_module_identifier
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_stencil_export
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_subgroup_ballot
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_subgroup_vote
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_shader_viewport_index_layer
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_subgroup_size_control
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_texel_buffer_alignment
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_transform_feedback
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_vertex_attribute_divisor
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_vertex_input_dynamic_state
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_EXT_ycbcr_2plane_444_formats
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_INTEL_performance_query
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_16bit_storage
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_8bit_storage
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_bind_memory2
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_buffer_device_address
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_calibrated_timestamps
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_compute_shader_derivatives
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_copy_commands2
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_create_renderpass2
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_dedicated_allocation
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_depth_stencil_resolve
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_descriptor_update_template
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_device_group
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_draw_indirect_count
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_driver_properties
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_dynamic_rendering
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_dynamic_rendering_local_read
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_fence
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_fence_win32
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_memory
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_memory_win32
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_semaphore
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_external_semaphore_win32
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_format_feature_flags2
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_fragment_shading_rate
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_get_memory_requirements2
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_global_priority
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_image_format_list
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_imageless_framebuffer
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_index_type_uint8
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_line_rasterization
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_load_store_op_none
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance1
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance2
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance3
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance4
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance5
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance6
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_maintenance7
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_map_memory2
+[2026.07.15-16.07.28:420][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_multiview
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_performance_query
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_pipeline_executable_properties
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_pipeline_library
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_push_descriptor
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_relaxed_block_layout
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_sampler_mirror_clamp_to_edge
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_sampler_ycbcr_conversion
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_separate_depth_stencil_layouts
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_clock
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_draw_parameters
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_expect_assume
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_float16_int8
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_float_controls
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_float_controls2
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_integer_dot_product
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_maximal_reconvergence
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_non_semantic_info
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_quad_control
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_subgroup_extended_types
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_subgroup_rotate
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_subgroup_uniform_control_flow
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_shader_terminate_invocation
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_spirv_1_4
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_storage_buffer_storage_class
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_swapchain
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_swapchain_mutable_format
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_synchronization2
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_timeline_semaphore
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_uniform_buffer_standard_layout
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_variable_pointers
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_vertex_attribute_divisor
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_decode_av1
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_decode_h264
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_decode_h265
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_decode_queue
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_video_queue
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_vulkan_memory_model
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_win32_keyed_mutex
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_workgroup_memory_explicit_layout
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_KHR_zero_initialize_workgroup_memory
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_compute_shader_derivatives
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: -    Found device extension VK_NV_device_diagnostic_checkpoints
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: Using Device 0: Geometry 1 Tessellation 1 BufferAtomic64 1
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: Found 6 Queue Families
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: Initializing Queue Family 0: 16 queues Gfx Compute Xfer Sparse
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: Initializing Queue Family 1: 2 queues Xfer Sparse
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: Skipping unnecessary Queue Family 2: 8 queues Compute Xfer Sparse
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: Skipping unnecessary Queue Family 3: 1 queues Xfer Sparse
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: Skipping unnecessary Queue Family 4: 1 queues Xfer Sparse
+[2026.07.15-16.07.28:421][  0]LogVulkanRHI: Display: Skipping unnecessary Queue Family 5: 1 queues Xfer Sparse
+[2026.07.15-16.07.28:581][  0]LogVulkanRHI: Display: Using device layers
+[2026.07.15-16.07.28:581][  0]LogVulkanRHI: Display: Using device extensions
+[2026.07.15-16.07.28:581][  0]LogVulkanRHI: Display: * VK_KHR_driver_properties
+[2026.07.15-16.07.28:581][  0]LogVulkanRHI: Display: * VK_KHR_get_memory_requirements2
+[2026.07.15-16.07.28:581][  0]LogVulkanRHI: Display: * VK_KHR_dedicated_allocation
+[2026.07.15-16.07.28:581][  0]LogVulkanRHI: Display: * VK_KHR_bind_memory2
+[2026.07.15-16.07.28:581][  0]LogVulkanRHI: Display: * VK_KHR_image_format_list
+[2026.07.15-16.07.28:581][  0]LogVulkanRHI: Display: * VK_KHR_sampler_ycbcr_conversion
+[2026.07.15-16.07.28:581][  0]LogVulkanRHI: Display: * VK_EXT_full_screen_exclusive
+[2026.07.15-16.07.28:581][  0]LogVulkanRHI: Display: * VK_KHR_fragment_shading_rate
+[2026.07.15-16.07.28:581][  0]LogVulkanRHI: Display: * VK_KHR_swapchain
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: * VK_KHR_maintenance1
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: * VK_KHR_maintenance2
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: * VK_EXT_memory_budget
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: * VK_EXT_scalar_block_layout
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: * VK_EXT_memory_priority
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: * VK_KHR_shader_atomic_int64
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: 2 Device Memory Heaps; Max memory allocations -1
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display:  0: Flags 0x1 Size 4154458112 (3962.00 MB) GPU
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display:  1: Flags 0x0 Size 8391151616 (8002.43 MB) 
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: 6 Device Memory Types (Not unified)
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display:  1: Flags 0x00001 Heap  0  Local                                         
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display:  2: Flags 0x00001 Heap  0  Local                                         
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display:  5: Flags 0x00007 Heap  0  Local HostVisible HostCoherent                
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display:  0: Flags 0x00000 Heap  1                                                
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display:  3: Flags 0x00006 Heap  1        HostVisible HostCoherent                
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display:  4: Flags 0x0000e Heap  1        HostVisible HostCoherent HostCached     
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: Host Allocation Percentage   0.00% -          0.00MB / 3367.700MB
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: Memory Budget
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: 	         | Usage                     | Budget          | Size            |
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: 	---------|---------------------------------------------------------------|
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: 	 HEAP 00 |   0.22% /         8.715mb |      3367.700mb |      3962.000mb |
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: 	 HEAP 01 |   0.89% /        71.070mb |      7346.306mb |      8002.426mb |
+[2026.07.15-16.07.28:582][  0]LogVulkanRHI: Display: 	---------|---------------------------------------------------------------|
+[2026.07.15-16.07.28:586][  0]LogVulkanRHI: Display: FVulkanPipelineStateCacheManager: Binary pipeline cache '../../../FSOnline/Saved/VulkanPSO.cache.10de.25a2' not found.
+[2026.07.15-16.07.28:587][  0]LogVulkanRHI: Display: Nvidia User Driver Version = 592.00
+[2026.07.15-16.07.28:591][  0]LogHMD: Failed to enumerate extensions. Please check that you have a valid OpenXR runtime installed.
+[2026.07.15-16.07.28:591][  0]LogRHI: Texture pool is 2773 MB (70% of 3962 MB)
+[2026.07.15-16.07.28:626][  0]LogRHI: GeForceNow SDK initialized: 1
+[2026.07.15-16.07.28:626][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2026.07.15-16.07.28:630][  0]LogShaderLibrary: Display: Using ../../../FSOnline/Content/ShaderArchive-Global-SF_VULKAN_SM5.ushaderbytecode for material shader code. Total 1868 unique shaders.
+[2026.07.15-16.07.28:630][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library Global
+[2026.07.15-16.07.28:630][  0]LogShaderLibrary: Display: Logical shader library 'Global' has been created, components 1
+[2026.07.15-16.07.28:631][  0]LogTemp: Warning: Clearing the OS Cache
+[2026.07.15-16.07.28:631][  0]LogODSC: ODSC Thread active.
+[2026.07.15-16.07.28:631][  0]LogShaders: InitializeShaderTypes() begin
+[2026.07.15-16.07.28:631][  0]LogShaders: InitializeShaderTypes() end
+[2026.07.15-16.07.28:634][  0]LogPakFile: New pak file ../../../FSOnline/Content/Paks/FSOnline-WindowsNoEditor.pak added to pak precacher.
+[2026.07.15-16.07.28:661][  0]LogSlate: Using FreeType 2.10.0
+[2026.07.15-16.07.28:661][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.07.15-16.07.28:661][  0]LogHMD: Failed to enumerate extensions. Please check that you have a valid OpenXR runtime installed.
+[2026.07.15-16.07.28:776][  0]LogVulkanRHI: Display: Queue Family 0: Supports Present
+[2026.07.15-16.07.28:776][  0]LogVulkanRHI: Display: Queue Family 0: Supports Present
+[2026.07.15-16.07.28:777][  0]LogVulkanRHI: Display: Found 5 Surface present modes:
+[2026.07.15-16.07.28:777][  0]LogVulkanRHI: Display: - VK_PRESENT_MODE_FIFO_KHR (2)
+[2026.07.15-16.07.28:777][  0]LogVulkanRHI: Display: - VK_PRESENT_MODE_FIFO_RELAXED_KHR (3)
+[2026.07.15-16.07.28:777][  0]LogVulkanRHI: Display: - VK_PRESENT_MODE_MAILBOX_KHR (1)
+[2026.07.15-16.07.28:777][  0]LogVulkanRHI: Display: - VK_PRESENT_MODE_IMMEDIATE_KHR (0)
+[2026.07.15-16.07.28:777][  0]LogVulkanRHI: Display: - VkPresentModeKHR 1000361000
+[2026.07.15-16.07.28:777][  0]LogVulkanRHI: Display: Selected VkPresentModeKHR mode 1
+[2026.07.15-16.07.28:777][  0]LogVulkanRHI: Creating new VK swapchain with present mode 1, format 64, color space 0, num images 3
+[2026.07.15-16.07.29:024][  0]LogShaderLibrary: Display: Using ../../../FSOnline/Content/ShaderArchive-FSOnline-SF_VULKAN_SM5.ushaderbytecode for material shader code. Total 3051 unique shaders.
+[2026.07.15-16.07.29:024][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library FSOnline
+[2026.07.15-16.07.29:024][  0]LogShaderLibrary: Display: Logical shader library 'FSOnline' has been created, components 1
+[2026.07.15-16.07.29:024][  0]LogRHI: Display: Opened pipeline cache after state change and enqueued 0 of 0 tasks for precompile.
+[2026.07.15-16.07.29:024][  0]LogShaderLibrary: Display: Using ../../../FSOnline/Content/ShaderArchive-FSOnline-SF_VULKAN_SM5.ushaderbytecode for material shader code. Total 3051 unique shaders.
+[2026.07.15-16.07.29:024][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library FSOnline
+[2026.07.15-16.07.29:024][  0]LogRHI: Display: Opened pipeline cache after state change and enqueued 0 of 0 tasks for precompile.
+[2026.07.15-16.07.29:024][  0]LogRHI: Display: Failed to open default shader pipeline cache for FSOnline using shader platform 20.
+[2026.07.15-16.07.29:024][  0]LogRHI: Display: Failed to open default shader pipeline cache for FSOnline using shader platform 20.
+[2026.07.15-16.07.29:024][  0]LogInit: Using OS detected language (en-US).
+[2026.07.15-16.07.29:024][  0]LogInit: Using OS detected locale (en-US).
+[2026.07.15-16.07.29:025][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2026.07.15-16.07.29:025][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the locale.
+[2026.07.15-16.07.29:025][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2026.07.15-16.07.29:025][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2026.07.15-16.07.29:026][  0]LogAssetRegistry: FAssetRegistry took 0.0012 seconds to start up
+[2026.07.15-16.07.29:097][  0]LogTextLocalizationManager: Compacting localization data took   1.72ms
+[2026.07.15-16.07.29:097][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.07.15-16.07.29:097][  0]LogPackageLocalizationCache: Processed 25 localized package path(s) for 1 prioritized culture(s) in 0.000085 seconds
+[2026.07.15-16.07.29:102][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2026.07.15-16.07.29:103][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2026.07.15-16.07.29:103][  0]LogInit: Active device profile: [0000027A5B839D00][0000027A6E850010 49] WindowsNoEditor
+[2026.07.15-16.07.29:103][  0]LogInit: Profiles: [0000027A5B83A000][0000027A040324A0 49] Windows, [0000027A5B839D00][0000027A6E850010 49] WindowsNoEditor, 
+[2026.07.15-16.07.29:128][  0]LogNetVersion: FSOnline 1.0.0, NetCL: 17155196, EngineNetVer: 17, GameNetVer: 0 (Checksum: 2932841355)
+[2026.07.15-16.07.29:228][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.07.15-16.07.29:229][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.07.15-16.07.29:248][  0]LogMoviePlayer: Initializing movie player
+[2026.07.15-16.07.29:248][  0]LogTemp: StartupModule: AirSim plugin
+[2026.07.15-16.07.29:248][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: DF327F0148F4E01817E0B8BEBEA2AE18 | Instance: B478AB0D4FDF888E86F50DB0F9245106 (--VOLDEMORT---29804).
+[2026.07.15-16.07.29:249][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.07.15-16.07.29:254][  0]LogUObjectArray: 16088 objects as part of root set at end of initial load.
+[2026.07.15-16.07.29:254][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2026.07.15-16.07.29:254][  0]LogUObjectAllocator: 3377512 out of 0 bytes used by permanent object pool.
+[2026.07.15-16.07.29:254][  0]LogUObjectArray: CloseDisregardForGC: 16088/16088 objects in disregard for GC pool
+[2026.07.15-16.07.29:258][  0]LogEngine: Initializing Engine...
+[2026.07.15-16.07.29:258][  0]LogHMD: Failed to enumerate extensions. Please check that you have a valid OpenXR runtime installed.
+[2026.07.15-16.07.29:259][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.07.15-16.07.29:338][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.07.15-16.07.29:338][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2026.07.15-16.07.29:338][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2026.07.15-16.07.29:339][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2026.07.15-16.07.29:339][  0]LogAudio: Display: Audio Device Manager Initialized
+[2026.07.15-16.07.29:339][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2026.07.15-16.07.29:339][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.07.15-16.07.29:339][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.07.15-16.07.29:339][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.07.15-16.07.29:339][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.07.15-16.07.29:339][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.07.15-16.07.29:339][  0]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2026.07.15-16.07.29:339][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.07.15-16.07.29:339][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.07.15-16.07.29:339][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.07.15-16.07.29:339][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.07.15-16.07.29:339][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.07.15-16.07.29:339][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.07.15-16.07.29:346][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2026.07.15-16.07.29:358][  0]LogAudioMixer: Display: 0: FrontLeft
+[2026.07.15-16.07.29:358][  0]LogAudioMixer: Display: 1: FrontRight
+[2026.07.15-16.07.29:565][  0]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2026.07.15-16.07.29:565][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.07.15-16.07.29:566][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.07.15-16.07.29:566][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.07.15-16.07.29:568][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2026.07.15-16.07.29:568][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2026.07.15-16.07.29:568][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2026.07.15-16.07.29:568][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2026.07.15-16.07.29:568][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2026.07.15-16.07.29:568][  0]LogInit: FAudioDevice initialized.
+[2026.07.15-16.07.29:569][  0]LogNetVersion: Set ProjectVersion to 2.2.0. Version Checksum will be recalculated on next use.
+[2026.07.15-16.07.29:569][  0]LogInit: Texture streaming: Enabled
+[2026.07.15-16.07.29:574][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2026.07.15-16.07.29:574][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.07.15-16.07.29:574][  0]LogInit: Display: Game Engine Initialized.
+[2026.07.15-16.07.29:575][  0]LogInit: Display: Starting Game.
+[2026.07.15-16.07.29:575][  0]LogNet: Browse: /Game/TrainingMap?Name=Player?listen
+[2026.07.15-16.07.29:575][  0]LogLoad: LoadMap: /Game/TrainingMap?Name=Player?listen
+[2026.07.15-16.07.29:575][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2026.07.15-16.07.29:576][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.07.15-16.07.29:576][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.07.15-16.07.29:579][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.07.15-16.07.29:585][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2026.07.15-16.07.29:627][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'TrainingMap'.
+[2026.07.15-16.07.29:628][  0]LogAIModule: Creating AISystem for world TrainingMap
+[2026.07.15-16.07.29:629][  0]LogLoad: Game class is 'AirSimGameMode'
+[2026.07.15-16.07.29:629][  0]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2026.07.15-16.07.29:629][  0]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2026.07.15-16.07.29:629][  0]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2026.07.15-16.07.29:629][  0]LogNet: Created socket for bind address: 0.0.0.0 on port 7777
+[2026.07.15-16.07.29:629][  0]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.07.15-16.07.29:629][  0]LogNet: GameNetDriver IpNetDriver_2147482559 IpNetDriver listening on port 7777
+[2026.07.15-16.07.29:635][  0]LogPhysics: Warning: Scale for /Game/TrainingMap.TrainingMap:PersistentLevel.StartFinishLine.Start/Finish Line has a component set to zero, which will result in a bad body instance. Scale:X=0.000 Y=24.000 Z=1.000
+[2026.07.15-16.07.29:636][  0]LogWorld: Bringing World /Game/TrainingMap.TrainingMap up for play (max tick rate 0) at 2026.07.15-21.37.29
+[2026.07.15-16.07.29:637][  0]LogWorld: Bringing up level for play took: 0.006389
+[2026.07.15-16.07.29:638][  0]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2026.07.15-16.07.29:639][  0]LogBlueprintUserMessages: [spline_cones_best_200] Track spline length: 38239.976562
+[2026.07.15-16.07.29:640][  0]LogBlueprintUserMessages: [spline_cones_best_200] Track number of cones 190
+[2026.07.15-16.07.29:641][  0]LogActor: Warning: BP_CameraDirector_C /Game/TrainingMap.TrainingMap:PersistentLevel.CameraDirector has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2026.07.15-16.07.29:923][  0]LogPakFile: Precache HighWater 16MB
+
+[2026.07.15-16.07.29:923][  0]LogPakFile: Precache HighWater 32MB
+
+[2026.07.15-16.07.29:923][  0]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2026.07.15-16.07.29:943][  0]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/AirSim/Weather/WeatherFX/WeatherActor.WeatherActor_C:ExecuteUbergraph_WeatherActor'!
+[2026.07.15-16.07.29:952][  0]r.CustomDepth = "3"
+[2026.07.15-16.07.29:952][  0]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2026.07.15-16.07.29:952][  0]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CaptureDuringMouseDown
+[2026.07.15-16.07.29:952][  0]LogLoad: Took 0.376710 seconds to LoadMap(/Game/TrainingMap)
+[2026.07.15-16.07.30:028][  0]LogSlate: Took 0.001180 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2026.07.15-16.07.30:045][  0]LogRenderer: Reallocating scene render targets to support 1536x864 Format 10 NumSamples 1 (Frame:1).
+[2026.07.15-16.07.30:045][  0]LogRHI: Display: ShaderPipelineCache: Paused Batching. 1
+[2026.07.15-16.07.30:045][  0]LogPakFile: AllPaks IndexSizes: DirectoryHashSize=280312, PathHashSize=16, EntriesSize=90112, TotalSize=370440
+[2026.07.15-16.07.30:045][  0]LogRHI: Display: ShaderPipelineCache: Resumed Batching. 0
+[2026.07.15-16.07.30:045][  0]LogRHI: Display: ShaderPipelineCache: Batching Resumed.
+[2026.07.15-16.07.30:045][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.07.15-16.07.30:045][  0]LogLoad: (Engine Initialization) Total time: 2.19 seconds
+[2026.07.15-16.07.30:134][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2026.07.15-16.07.30:153][  0]LogRenderer: Reallocating scene render targets to support 128x128 Format 10 NumSamples 1 (Frame:1).
+[2026.07.15-16.07.30:186][  0]LogRenderer: Reallocating scene render targets to support 1536x864 Format 10 NumSamples 1 (Frame:2).
+[2026.07.15-16.07.30:241][  0]LogVulkanRHI: Creating new VK swapchain with present mode 0, format 64, color space 0, num images 3
+[2026.07.15-16.07.30:245][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.07.15-16.07.30:250][  0]LogSlate: Slate font cache was flushed
+[2026.07.15-16.07.30:258][  1]LogSlate: Took 0.001039 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2026.07.15-16.07.51:883][148]LogAudioMixer: Warning: Changing default audio render device to new device: {0.0.0.00000000}.{6713e412-03d9-48ca-ae82-e6ee47b1f9d3}.
+[2026.07.15-16.07.51:940][148]LogAudioMixer: Resetting audio stream to device id 
+[2026.07.15-16.07.52:102][148]LogAudio: Display: Waited 35.662098 ms for audio thread.
+[2026.07.15-16.07.52:137][148]LogAudio: Display: Waited 71.250107 ms for audio thread.
+[2026.07.15-16.07.52:173][148]LogAudio: Display: Waited 106.551399 ms for audio thread.
+[2026.07.15-16.07.52:209][148]LogAudio: Display: Waited 142.059509 ms for audio thread.
+[2026.07.15-16.07.52:244][148]LogAudioMixer: Display: 0: FrontLeft
+[2026.07.15-16.07.52:244][148]LogAudioMixer: Display: 1: FrontRight
+[2026.07.15-16.07.52:244][148]LogAudio: Display: Waited 177.733597 ms for audio thread.
+[2026.07.15-16.07.52:279][148]LogAudio: Display: Waited 212.867310 ms for audio thread.
+[2026.07.15-16.07.52:315][148]LogAudio: Display: Waited 248.161606 ms for audio thread.
+[2026.07.15-16.07.52:350][148]LogAudio: Display: Waited 283.909790 ms for audio thread.
+[2026.07.15-16.07.52:386][148]LogAudio: Display: Waited 319.103210 ms for audio thread.
+[2026.07.15-16.07.52:421][148]LogAudio: Display: Waited 354.578278 ms for audio thread.
+[2026.07.15-16.07.52:457][148]LogAudio: Display: Waited 390.014709 ms for audio thread.
+[2026.07.15-16.07.52:492][148]LogAudio: Display: Waited 425.083893 ms for audio thread.
+[2026.07.15-16.07.52:527][148]LogAudio: Display: Waited 460.170013 ms for audio thread.
+[2026.07.15-16.07.52:562][148]LogAudio: Display: Waited 495.302277 ms for audio thread.
+[2026.07.15-16.07.52:597][148]LogAudio: Display: Waited 530.529968 ms for audio thread.
+[2026.07.15-16.07.52:633][148]LogAudio: Display: Waited 566.075378 ms for audio thread.
+[2026.07.15-16.07.52:649][148]LogAudio: Display: Waited 582.655396 ms for audio thread.
+[2026.07.15-16.22.09:541][808]LogSlate: Request Window 'Formula Student Driverless Simulator Formula Student Driverless Simulator (debug) ' being destroyed
+[2026.07.15-16.22.09:594][808]LogSlate: Window 'Formula Student Driverless Simulator Formula Student Driverless Simulator (debug) ' being destroyed
+[2026.07.15-16.22.09:642][808]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2026.07.15-16.22.09:659][809]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2026.07.15-16.22.09:659][809]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.07.15-16.22.09:659][809]LogEngine: All Windows Closed
+[2026.07.15-16.22.09:659][809]LogWindows: FPlatformMisc::RequestExit(0)
+[2026.07.15-16.22.09:659][809]LogWindows: FPlatformMisc::RequestExitWithStatus(0, 0)
+[2026.07.15-16.22.09:659][809]LogCore: Engine exit requested (reason: Win RequestExit)
+[2026.07.15-16.22.09:662][810]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2026.07.15-16.22.09:662][810]LogInit: Display: PreExit Game.
+[2026.07.15-16.22.09:680][810]LogWorld: BeginTearingDown for /Game/TrainingMap
+[2026.07.15-16.22.09:680][810]LogNet: World NetDriver shutdown IpNetDriver_2147482559 [GameNetDriver]
+[2026.07.15-16.22.09:680][810]LogNet: DestroyNamedNetDriver IpNetDriver_2147482559 [GameNetDriver]
+[2026.07.15-16.22.09:680][810]LogExit: GameNetDriver IpNetDriver_2147482559 shut down

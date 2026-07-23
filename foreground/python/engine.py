@@ -68,38 +68,60 @@ def run_fsds_as_spectator_server():
     return process
 
 
-if __name__ == "__main__":
-    import sys
+def stop_process_tree(process):
+    """Stop FSDS and every child it launched on Windows."""
+    if process is None or process.poll() is not None:
+        return
+    try:
+        subprocess.run(
+            ["taskkill", "/PID", str(process.pid), "/T", "/F"],
+            capture_output=True,
+            text=True,
+            timeout=10,
+            check=False,
+        )
+    except (OSError, subprocess.SubprocessError) as error:
+        print(f"WARNING: could not stop FSDS process tree: {error}", flush=True)
 
-    if simulator_rpc_ready():
-        print("FSDS RPC is already available. Attaching to existing simulator...", flush=True)
-        print("FSDS_READY", flush=True)
-        try:
+
+def main():
+    proc = None
+    started_simulator = False
+    try:
+        if simulator_rpc_ready():
+            print("FSDS RPC is already available. Attaching to existing simulator...", flush=True)
+            print("FSDS_READY", flush=True)
             while True:
                 time.sleep(1)
-        except KeyboardInterrupt:
-            pass
-    else:
-        proc = None
+
         if fsds_process_running():
             print("FSDS process is already starting. Waiting for its RPC API...", flush=True)
         else:
             print("No existing FSDS instance found. Starting simulator...", flush=True)
             try:
                 proc = run_fsds_as_spectator_server()
+                started_simulator = True
             except Exception as e:
                 print(f"ERROR starting FSDS: {e}", flush=True)
-                sys.exit(1)
+                return 1
 
         if wait_for_simulator():
             print("FSDS_READY", flush=True)
         else:
             print("ERROR: FSDS process exists but its RPC API did not become ready.", flush=True)
-            sys.exit(1)
+            return 1
 
-        try:
-            while proc is None or proc.poll() is None:
-                time.sleep(1)
-        except KeyboardInterrupt:
-            if proc is not None and proc.poll() is None:
-                proc.terminate()
+        while proc is None or proc.poll() is None:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("Stopping foreground simulator helper...", flush=True)
+        return 0
+    finally:
+        # Only close a simulator this launcher started. An FSDS instance that
+        # existed before cargo run is left alone.
+        if started_simulator:
+            stop_process_tree(proc)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

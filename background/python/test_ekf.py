@@ -88,6 +88,20 @@ class TestEKFSLAM(unittest.TestCase):
         self.assertEqual(len(self.ekf.landmarks), 1)
         self.assertEqual(self.ekf.landmarks[0]["color"], "blue")
 
+    def test_retaining_local_candidates_compacts_dense_state(self):
+        for candidate_id in range(3):
+            self.ekf.update([{
+                "range": 5.0 + candidate_id,
+                "bearing": 0.5 * candidate_id,
+                "color": "unknown",
+                "candidate_id": candidate_id,
+            }])
+        self.ekf.retain_candidate_ids({1})
+        self.assertEqual(len(self.ekf.landmarks), 1)
+        self.assertEqual(self.ekf.landmarks[0]["candidate_id"], 1)
+        self.assertEqual(self.ekf.x.shape, (5,))
+        self.assertEqual(self.ekf.P.shape, (5, 5))
+
 
 if __name__ == "__main__":
     unittest.main()

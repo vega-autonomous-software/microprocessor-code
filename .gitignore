@@ -1,40 +1,25 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
-.env
-.venv
-venv/
-ENV/
-
-# Rust
+# Rust build output
 target/
-**/*.rs.bk
+**/target/
 
-# OS & IDE
-.DS_Store
-.vscode/
-.idea/
+# Unreal/FSOnline large generated binaries
+foreground/engine_binaries/FSOnline/Binaries/Win64/Blocks.exe
+foreground/engine_binaries/FSOnline/Content/Paks/*.pak
 
-# Project Specific
-engine_binaries/
-**/engine_binaries/
-engine_binaries.7z
-best.pt
+# Common Unreal Engine generated folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Build artifacts
+*.o
+*.obj
+*.pdb
+*.dll
+*.exe
+*.pak
+
+# Temporary files
+*.log
+*.tmp

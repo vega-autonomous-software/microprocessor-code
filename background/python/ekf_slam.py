@@ -2,6 +2,12 @@ import numpy as np
 import math
 
 
+# This EKF uses a dense covariance matrix: update cost grows quadratically
+# with landmark count.  Keep a small local working set here; the dashboard's
+# candidate map stores the complete persistent cone history.
+MAX_ACTIVE_EKF_LANDMARKS = 120
+
+
 class EKFSLAM:
     def __init__(self, R_pose=None, Q_obs=None, init_p_pose=1e-3, init_p_landmark=5.0, assoc_threshold=3.0):
         """
@@ -45,6 +51,34 @@ class EKFSLAM:
         # Keep track of history trace for trajectory rendering
         self.trajectory = []
         self.trajectory.append((float(self.x[0]), float(self.x[1])))
+
+    def can_track_candidate(self, candidate_id):
+        """Whether this candidate belongs to the local dense-EKF working set."""
+        return (
+            any(item.get("candidate_id") == candidate_id for item in self.landmarks)
+            or len(self.landmarks) < MAX_ACTIVE_EKF_LANDMARKS
+        )
+
+    def retain_candidate_ids(self, candidate_ids):
+        """Drop distant landmarks from the dense EKF, preserving global map data.
+
+        The caller owns the lightweight global candidate map.  Removing an
+        inactive landmark here only reduces the local covariance matrix; it
+        never removes the corresponding cone from that persistent map.
+        """
+        keep = [
+            index for index, item in enumerate(self.landmarks)
+            if item.get("candidate_id") in candidate_ids
+        ]
+        if len(keep) == len(self.landmarks):
+            return
+
+        state_indices = [0, 1, 2]
+        for index in keep:
+            state_indices.extend((3 + 2 * index, 4 + 2 * index))
+        self.x = self.x[state_indices]
+        self.P = self.P[np.ix_(state_indices, state_indices)]
+        self.landmarks = [dict(self.landmarks[index], id=new_id) for new_id, index in enumerate(keep)]
 
     def predict(self, v, omega, dt):
         """
@@ -277,7 +311,7 @@ class EKFSLAM:
             # rather than duplicating the same physical cone in the map.
             return None
 
-        elif r is not None and len(self.landmarks) < 300:
+        elif r is not None and len(self.landmarks) < MAX_ACTIVE_EKF_LANDMARKS:
             angle = theta + b
             xl_est = xv + r * math.cos(angle)
             yl_est = yv + r * math.sin(angle)
