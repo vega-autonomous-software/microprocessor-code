@@ -170,7 +170,7 @@ class TestConsoleApp:
         self.new_fused_ready = False
 
         # Initialize Autonomous Controller (Speed capped to 1.0 m/s)
-        self.controller = AutonomousController(target_speed=1.0)
+        self.controller = AutonomousController(target_speed=5.0)
         self.autonomous_mode = False
 
         # Thread-safe image processing pipeline
