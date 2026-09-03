@@ -1,3 +1,9 @@
+
+this repo has the most stable version of the code in the microprosessor 
+
+
+
+
 # Autonomous Car Project
 
 Welcome to the autonomous car project. This repository is cleanly organized to enforce reliable setups across different development laptops. It provides decoupled architectures for both background (ML testing, stream logic) and foreground (control, simulator interfaces).
